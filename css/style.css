@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+:root{
+
+  --mainColor: #4bb85d;
+  --mainColorHover: rgb(44, 139, 66);
+
+  /* text */
+  --mainTextColor: white;
+  --secondTextColor: black;
+
+
+}
+*{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  color: #fff;
+  flex-direction: column;
+  background-color: #353535; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  width: 100vw; /* You must set a specified height */
+  background: url("/images/photo1.jpg") ;
+  background-size: 100px 100px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+/* Navbar */
+.navbar {
+
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  /* transition: 0.5s; */
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+
+  margin-right: auto;
+}
+
+.navbar a:hover {
+  border-bottom: var(--mainColor) 3px solid;
+  padding-bottom: 5px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  
+}
+
+/* Utilities */
+.markColor{
+  color: var(--mainColor);
+}
+
+.contactInfo{
+  color: var(--mainTextColor);
+  padding: 15px;
+}
+/* Logo */
+#Logo{
+  display: flex;
+  flex-direction: row;
+
+}
+
+/* mainPage */
+.mainPage{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 1000px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+
+
+}
+.mainPage h1{
+  font-weight: 900;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Buttons */
+.myBtn{
+  margin-top:10px;
+  background-color: var(--mainColor);
+  padding:20px;
+  border: 1px rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-top: 30px;
+  color: white;
+}
+.myBtn:hover{
+  background-color: var(--mainColorHover);
+}
+
+/* Section 2 - about*/
+#about{
+  
+  height: 700px;
+  width: 100vw;
+  background-color: #ffffff;
+  color: var(--secondTextColor);
+  padding: 6% 0 0  3% ;
+}
+
+#about h1{
+font-size: 40px;
+font-weight: 900;
+}
+
+.myImg{
+  border-radius: 100%;
+  width: 300px;
+}
+#showIcons{
+padding: 20px;
+/* background-color: #333; */
+width: 35vh;
+flex: content;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: auto;
+border-radius: 5px;
+border-color: var(--mainColor);
+/* min-height: 20vh; */
+}
+
+.iconDesign{
+  color: white;
+  padding: 15px;
+  background-color: var(--mainColor);
+  border-radius: 100%;
+}
+
+.blackDesign{
+  background-color: rgb(88, 88, 88);
+}
+.iconDesign:hover{
+  background-color: var(--mainColorHover);
+  border-radius: 100%;
+}
+/* Section 3*/
+#projects{
+  height: 700px;
+  width: 100vw;
+  background-color: #f1f0f0;
+  color: var(--secondTextColor);
+  padding: 6% 0 0  3% ;
+}
+
+#projects h1{
+font-size: 40px;
+font-weight: 900;
+}
+
+/* Section 4 + 5 */
+#Section4and5{
+  display: flex;
+  flex-direction: row;  
+}
+/* Section 4*/
+#section4{
+  height: 500px;
+  width: 50vw;
+  background-color: #333;
+  color: white;
+  padding: 6% 0 0  3% ;
+}
+
+
+/* Section 5*/
+#section5{
+  height: 500px;
+  width: 50vw;
+  background-color: var(--mainColor);
+  color: white;
+  padding: 6% 0 0  3% ;
+}
+
+/* MyDetails */
+#MyDetails{
+
+  background-color: #222;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* margin-right: auto; */
+  padding: 33px;
+}
+/* Can be deleted */
+#MyDetails #contactIcons{
+  padding: 0 0 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Footer */
+#footer{
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
